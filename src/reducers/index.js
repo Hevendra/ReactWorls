@@ -1,6 +1,6 @@
 import UserDetails from './user.detail'
-import {combineReducers} from 'redux'
+import { combineReducers } from 'redux'
 export const rootReducer = combineReducers({
- UserDetails
- });
+    UserDetails
+});
 export default rootReducer

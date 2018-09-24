@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
-import {PearsonUsers} from './PearsonUsers';
+import PearsonUsers from './PearsonUsers';
 import {userActions} from '../actions';
 import {connect} from 'react-redux';
 import Pagination from '../components/Pagination';
 import '../App.css';
 
 class App extends Component {
-  constructor (props) {
-    super (props);
-  }
+  
   componentDidMount () {
     this.props.firstTimeAPICall ();
   }

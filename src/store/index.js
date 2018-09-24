@@ -3,5 +3,5 @@
 // }else {
 //     module.exports = require('./store.dev')
 // }
-  
-export  * from './store.dev'
+
+export * from './store.dev'

@@ -1,12 +1,8 @@
 {
-    "presets": ["es2015", "react"],
-    "env": {
-      "test": {
-        "presets": [
-            "react",
-            "es2015",
-          ["env", { "modules": "commonjs" }]
-        ]
-      }
+  "presets": ["es2015", "react"],
+  "env": {
+    "test": {
+      "presets": ["react", "es2015", ["env", {"modules": "commonjs"}]]
     }
   }
+}

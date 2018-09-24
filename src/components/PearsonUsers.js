@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { userActions } from '../actions'
 import '../App.css'
 
-export class PearsonUsers extends React.Component {
+ class PearsonUsers extends React.Component {
     render() {
         console.log("apis data=" + this.props.data);
         var apidata = undefined;
@@ -12,12 +12,13 @@ export class PearsonUsers extends React.Component {
             apidata = this.props.data.data;
         }
         var userdata = [];
-        if (apidata != undefined && apidata.length > 0) {
+        
+        if (apidata !== undefined && apidata.length > 0) {
             apidata.forEach(element => {
                 userdata.push(<UserDetail key={element.id} data={element} handleDelete={this.props.handleDelete} />);
             })
         } else {
-            userdata.push(<div className="display-name">Just a moment...</div>);
+            userdata.push(<div key="1" className="display-name">Just a moment...</div>);
         }
         return (
             <React.Fragment>
@@ -38,7 +39,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
         handleDelete: deletedata
     }
 }
-export default connect(null, mapDispatchToProps)(PearsonUsers)
+//export default connect(null, mapDispatchToProps)(PearsonUsers)
+PearsonUsers = connect(null,mapDispatchToProps)(PearsonUsers)
+export default PearsonUsers;
 
 
 
