@@ -11,5 +11,10 @@ function search(pageNo, limit) {
         })
         .then(user => {
             return user
+        }).catch(e=>{
+            alert("Something went wrong!!")
         });
+        
+        
+        
 }
