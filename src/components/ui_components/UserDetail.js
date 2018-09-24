@@ -7,9 +7,8 @@ export const UserDetail=({data,handleDelete})=>{
                 <img src={data.avatar} alt="CZ" className="image--cover" />
             </div>
             <p className="display-name">{data.first_name+" "+data.last_name} </p>
-            <button className="button button-primary" onClick={(e)=>{handleDelete(data)}} >
-                <p className="button"><span>Delete </span></p>
-            </button>
+            <p className="button"  onClick={(e)=>{handleDelete(data)}}><span>Delete </span></p>
+            
         </div>
     )
 }
