@@ -50,6 +50,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: center;
   
 }
 
@@ -80,7 +81,9 @@
 
 .wrapper {
   margin-top: -50px;
-  padding-left: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .image--cover {
