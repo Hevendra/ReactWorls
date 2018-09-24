@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component UserDetail Component Snapshot test 1`] = `
+<div
+  className="card-body"
+>
+  <div
+    className="wrapper"
+  >
+    <img
+      alt="CZ"
+      className="image--cover"
+      id="image_avatar"
+      src=""
+    />
+  </div>
+  <p
+    className="display-name"
+  >
+    Hevendra Jadaun
+     
+  </p>
+  <p
+    className="button"
+    onClick={[Function]}
+  >
+    <span>
+      Delete 
+    </span>
+  </p>
+</div>
+`;
